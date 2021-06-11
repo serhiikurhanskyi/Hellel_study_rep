@@ -12,7 +12,7 @@ list_1 = [2, 8, 3, 4, 3, 5, 2, 1, 0, 3, 4, 4, 5, 8, 7, 7]
 x = int(input('Введите число: '))
 for i in list_1:
     if i == x:
-        print('ok!')
+        print('Yes')
         break
 else:
-    print("No")
+    print("Not found")
