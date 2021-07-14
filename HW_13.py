@@ -18,10 +18,11 @@ def some_func(*args, **kwargs):
 def main():
     path = 'res.json'
     tpl = tuple(range(1, 22))
-    d = dict((tuple([f'bl{l}' * 2] * 2) for l in 'aoeiu'))
+    # d = dict((tuple([f'bl{l}' * 2] * 2) for l in 'aoeiu'))
     res = some_func(*tpl, **d)
     print(res)
     load_dict(res, path)
 
     if __name__ == '__main__':
         main()
+
